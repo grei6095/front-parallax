@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
     background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
 }
 
 header {
@@ -17,7 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +68,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 section::before {
@@ -102,6 +105,7 @@ section #text {
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
+    right: -350px;
 }
 
 section .btn {
